@@ -1,6 +1,6 @@
-function fetchGithubInformation(event) {
+function fetchGitHubInformation(event) {
 
-    var usernames = $("#gh-username").val();
+    var username = $("#gh-username").val();
     if (!username) {
         $("#gh-user-data").html(`<h2>Please enter a GitHub username</h2>`);
         return;
@@ -8,7 +8,6 @@ function fetchGithubInformation(event) {
 
     $("#gh-user-data").html(
         `<div id="loader">
-            <img src="/workspace/bootstrap-resume2/06-moving_the_code_into_its_own_script/assets/css/loader.gif" alt="loading..." />
+            <img src="assets/css/loader.gif" alt="loading..." />
         </div>`);
-
 }
